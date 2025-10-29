@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Dante Redgrave | IT Professional & Apsiring Software Engineer</title>
+</head>
+<body>
+
+  <header>
+    <h1>Dante James Redgrave</h1>
+    <h2>Information Technology Professional</h2>
+    <img id="selfie" src="images/Selfie.jpg">
+    <p>Grapevine, TX 76022 | (817) 231-1810
+      <a id="email-header" href="mailto:danteredgrave32@gmail.com" style="color: #fff;">danteredgrave32@gmail.com</a>
+    </p>
+  </header>
+
+  <nav>
+    <a href="resume.html" target="_blank">Home</a>
+    <a href="#resume" target="_blank">Resume</a>
+    <a href="cover-letter.html" target="_blank">Cover Letter</a>
+    <a href="career-goals.html" target="_blank">Career Goals</a>
+  </nav>
+
+  <main>
+    <section id="resume">
+      <article>
+        <h2>Professional Summary</h2>
+        <p>I have over <strong>8+ years</strong> in the Information Technology field, working with a variety of technologies from <em>PC hardware/software, printers, and medical equipment</em> to <strong>VMware SD-WAN Edge Computing</strong>, and <strong>Juniper and Cisco networking</strong>. I am currently pursuing my <strong>Bachelor of Science in Software Engineering</strong>, with plans to obtain a Master's in AI Engineering.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong>CCNA</strong> (Cisco Certified Network Associate) — Valid: 03/2023 – 03/2026</li>
+        <li><strong>CompTIA Server+</strong> — Earned: 06/2017</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <table>
+        <caption>Educational Background</caption>
+        <tr>
+          <th>Institution</th>
+          <th>Program/Degree</th>
+          <th>Year</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>My Computer Career</td>
+          <td>Certification Program</td>
+          <td>2016–2017</td>
+          <td>Arlington, TX</td>
+        </tr>
+        <tr>
+          <td>Western Governors University</td>
+          <td>Bachelor of Science – Software Engineering</td>
+          <td>Ongoing (2025)</td>
+          <td>Remote</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <article>
+        <h3>Brooksource / T-Mobile – Frisco, TX</h3>
+        <p><em>Network Operation Retail Technician</em> — May 2023 to Present</p>
+        <ul>
+          <li>Maintain and replace a mixed network of Juniper Mist SSR routers and Cisco routers/switches.</li>
+          <li>Use Wireshark for packet captures and root cause analysis.</li>
+          <li>Collaborate with ISPs and vendors to ensure network stability across the U.S. and Puerto Rico.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Configure Inc. – Dallas, TX</h3>
+        <p><em>Network Operations Center Engineer</em> — Jan 2022 to May 2023</p>
+        <ul>
+          <li>Reduced circuit turn-up time by 50% through optimized VMware Edge configurations.</li>
+          <li>Developed process documentation improving team efficiency.</li>
+          <li>Implemented policy-based routing for congestion reduction.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Baylor Scott & White Health / ATOS – Dallas, TX</h3>
+        <p><em>Remote Resolution Technician / Field Service Analyst</em> — Apr 2019 to Jan 2022</p>
+        <ul>
+          <li>Troubleshot Cisco AnyConnect VPN issues and user connectivity.</li>
+          <li>Supported end-user devices (Mac, Windows, tablets, mobile) both on-site and remotely.</li>
+          <li>Provided 24/7 on-call technical support for network and cable issues.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>TEKsystems / Baylor Scott & White – Dallas-Fort Worth, TX</h3>
+        <p><em>Enterprise Deployment Technician</em> — Aug 2018 to Apr 2019</p>
+        <ul>
+          <li>Deployed and troubleshot 15+ PCs daily across hospitals in Texas.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>NTT DATA / GameStop – Grapevine, TX</h3>
+        <p><em>Field Service Technician</em> — Mar 2018 to Aug 2018</p>
+        <ul>
+          <li>Performed diagnostics and maintenance for end-user devices.</li>
+          <li>Managed Active Directory users and imaged devices with SCCM.</li>
+          <li>Migrated user data from Windows 7 to Windows 10 using USMT.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ol>
+        <li>Knowledge of ISO/OSI layers</li>
+        <li>Layer 2 / Layer 3 stack protocols</li>
+        <li>Scripting & programming: Java, HTML, JSON, JavaScript, React</li>
+        <li>Cisco CLI & Juniper Remote Shell</li>
+        <li>VMware Edge routing & Juniper Mist SD-WAN</li>
+        <li>ServiceNow & Peir ticketing systems</li>
+      </ol>
+    </section>
+
+    <div id="date-container">
+      Current Date: <span id="current-date"></span>
+    </div>
+  </main>
+
+  <footer>
+    <hr />
+    <p>© 2025 Dante Redgrave — All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Populate current date
+    const dateElement = document.getElementById("current-date");
+    const today = new Date();
+    dateElement.textContent = today.toDateString();
+
+    // Console message
+    console.log("Dante Redgrave Resume Portfolio loaded successfully!");
+  </script>
+
+</body>
+</html>

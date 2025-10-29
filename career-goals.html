@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Goals - Dante Redgrave</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Career Goals</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="resume.html" target="_blank">Resume</a></li>
+            <li><a href="cover-letter.html" target="_blank">Cover Letter</a></li>
+            <li><a href="career-goals.html" target="_blank">Career Goals</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>My Professional Aspirations</h2>
+            <p>
+                My goal is to become a <strong>Full-Stack Developer</strong> who creates innovative digital experiences that make technology 
+                more accessible for everyone. I aim to work in an environment that encourages <em>continuous learning</em> and <mark>collaboration</mark>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Summary of my Career Goals</h2>
+
+            <!-- Add autoplay + muted (required by browsers) -->
+            <video id="careerVideo" controls autoplay playsinline width="400">
+                <source src="images/career-video.mp4" type="video/mp4">
+                 Your browser does not support the video tag.
+            </video>
+            
+            <!-- Give IDs to audio and video so JS can control them -->
+            <audio id="careerAudio" controls preload="none">
+                <source src="images/Techno_sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+</section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <fieldset>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required><br>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required><br>
+
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company"><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea><br>
+
+                <p>Best Contact Time:</p>
+                <input type="radio" id="am" name="time" value="am">
+                <label for="am">A.M.</label>
+                <input type="radio" id="pm" name="time" value="pm">
+                <label for="pm">P.M.</label>
+                <input type="radio" id="anytime" name="time" value="anytime">
+                <label for="anytime">Anytime</label><br>
+
+                <label for="contactpref">Preferred Contact Method:</label>
+                <select id="contactpref" name="contactpref">
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dante Redgrave | Portfolio Project</p>
+    </footer>
+
+<script>
+        // Wait until the page fully loads
+        document.addEventListener("DOMContentLoaded", function() {
+        const video = document.getElementById("careerVideo");
+        const audio = document.getElementById("careerAudio");
+
+        
+        // Pause the audio until video ends
+        audio.pause();
+        audio.currentTime = 0;
+
+        // When video ends, automatically play the audio
+        video.addEventListener("ended", function() {
+            audio.play();
+            audio.volume = 0; // start silent
+
+            // Gradually increase volume for a smooth fade-in
+            let fadeInterval = setInterval(() => {
+                if (audio.volume < 1.0) {
+                    audio.volume = Math.min(audio.volume + 0.05, 1.0);
+                } else {
+                    clearInterval(fadeInterval);
+                }
+            }, 200); // increases every 200ms
+        });
+    });
+</script>
+
+</body>
+</html>

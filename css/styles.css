@@ -1,0 +1,190 @@
+/* Universal selector */
+* {
+  box-sizing: border-box;
+}
+
+/* Element selector */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #0a2540;
+  color: purple;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#selfie {
+  width: 20vw;
+  height: 40vh;
+  align-content: center;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0%;
+  font-size: 2.5rem;
+}
+
+nav {
+  background: #112d4e;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+nav a {
+  color: darkmagenta;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Pseudo-class selector */
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: black;
+  color: violet;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section > h2 {
+  color: goldenrod;
+}
+
+article > h2 {
+  color: goldenrod;
+}
+
+h2 {
+  color: goldenrod;
+  border-bottom: 2px solid goldenrod;
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  color: darkmagenta;
+}
+
+br > strong {
+  color: goldenrod;
+}
+
+article > h3 {
+  border: dotted 2px goldenrod;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+fieldset {
+  border: goldenrod solid 3px;
+}
+
+
+footer {
+  text-align: center;
+  background: #0a2540;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+
+#date-container {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+
+.highlight {
+  color: #0077ff;
+  font-weight: bold;
+}
+
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+
+input[type="submit"]:hover {
+  background-color: #0a2540;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+img {
+  border: 2px solid #0a2540;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+video {
+  display: block;
+  margin: 1rem auto;
+}
+
+audio {
+  display: block;
+  margin: 1rem auto;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 0.8rem;
+  }
+}
